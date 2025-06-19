@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<script defer src="operations.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>División Tradicional con CSS</title>
+</head>
+
+<body>
+
+    <h1>Práctica de Divisiones</h1>
+    <div class="lista-operaciones" id="listaOperaciones">
+        <!-- Las operaciones se generarán aquí -->
+    </div>
+    <button class="boton-reiniciar" id="botonReiniciar" onclick="reiniciarOperaciones()">Reinicia Operaciones</button>
+
+    <!-- Pop-up para ingresar respuestas -->
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <div class="contenedor-pop-up">
+            <div class="columna">
+                <div class="divisor" id="divisorPopup"></div>
+            </div>
+            <div class="columna">
+                <div class="celda">
+                    <input type="number" class="campo-respuesta" id="cociente" placeholder="Cociente">
+                </div>
+                <div class="celda">
+                    <div class="dividendo-container" id="dividendoPopup">
+                    </div>
+                </div>
+                <div class="celda">
+                        <input type="number" class="campo-respuesta" id="residuo" placeholder="Residuo">
+                </div>
+            </div>
+        </div>
+        <button class="boton-validar" id="botonValidar">Validar</button>
+    </div>
+</body>
+
+</html>
+
+<!-- 
